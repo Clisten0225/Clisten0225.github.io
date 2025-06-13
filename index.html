@@ -1,39 +1,112 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Li-Sheng Zhuang</title>
-    <style>
-  body {
-    background: url('https://images.unsplash.com/photo-1526406915894-6c4f3081b3d9?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-    background-size: cover;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    padding: 60px;
-  }
-  .container {
-    background-color: rgba(0,0,0,0.6);
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 40px;
-    border-radius: 10px;
-  }
-</style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Hi, I'm Li-Sheng Zhuang</h1>
-      <p>I'm a graduate student in Statistics at NTHU with a research interest in:</p>
-      <ul>
-        <li>Causal mediation analysis</li>
-        <li>Survival analysis</li>
-        <li>Semi-competing risks</li>
-      </ul>
-      <p>
-        🔗 <a href="https://medium.com/@yspstcc100060507">View my Medium blog</a><br>
-        🔗 <a href="https://sites.google.com/view/li-sheng-zhuang/home">My Google Sites</a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Li-Sheng Zhuang</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+    header {
+      background-color: #2f3e46;
+      padding: 20px 40px;
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #354f52;
+      padding: 10px 40px;
+    }
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .container {
+      display: flex;
+      padding: 40px;
+    }
+    .sidebar {
+      width: 25%;
+      padding-right: 30px;
+    }
+    .sidebar img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .sidebar h2 {
+      margin-top: 20px;
+    }
+    .main {
+      width: 75%;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h3 {
+      color: #2f3e46;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    a {
+      color: #1d3557;
+    }
+  </style>
+</head>
+<body>
+  <header>Causal Inference & Biostatistics</header>
+  <nav>
+    <a href="#bio">Biography</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="sidebar">
+      <img src="https://avatars.githubusercontent.com/u/your-photo-id" alt="Li-Sheng Zhuang">
+      <h2>Li-Sheng Zhuang</h2>
+      <p>Graduate Student<br>NTHU Institute of Statistics</p>
+      <p><a href="mailto:your@email.com">Email</a><br>
+         <a href="https://medium.com/@yspstcc100060507">Medium</a><br>
+         <a href="https://sites.google.com/view/li-sheng-zhuang/home">Google Site</a>
       </p>
-      <p>Stay tuned for updates!</p>
     </div>
-  </body>
+
+    <div class="main">
+      <section id="bio">
+        <h3>Biography</h3>
+        <p>I am a graduate student in Statistics at National Tsing Hua University, with a strong interest in causal inference and survival analysis. My current thesis focuses on causal mediation analysis in semi-competing risks data.</p>
+      </section>
+
+      <section id="research">
+        <h3>Research Interests</h3>
+        <ul>
+          <li>Causal mediation analysis</li>
+          <li>Survival analysis</li>
+          <li>Semi-competing risks</li>
+          <li>Illness-death models</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: your@email.com</li>
+          <li>GitHub: <a href="https://github.com/Clisten0225">Clisten0225</a></li>
+          <li>Location: Hsinchu, Taiwan</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</body>
 </html>
