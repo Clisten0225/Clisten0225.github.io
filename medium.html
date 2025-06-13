@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medium Blog - Li-Sheng Zhuang</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Li-Sheng Zhuang</title>
   <style>
     body {
       margin: 0;
@@ -18,31 +19,48 @@
       font-size: 1.5em;
       font-weight: bold;
     }
-    .content {
+    nav {
+      background-color: #354f52;
+      padding: 10px 40px;
+    }
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .container {
+      display: flex;
       padding: 40px;
-      max-width: 800px;
-      margin: auto;
+    }
+    .sidebar {
+      width: 25%;
+      padding-right: 30px;
+    }
+    .sidebar img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .sidebar h2 {
+      margin-top: 20px;
+    }
+    .main {
+      width: 75%;
       background: white;
+      padding: 30px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-    h2 {
+    h3 {
       color: #2f3e46;
       border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
+      padding-bottom: 5px;
     }
     ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 12px;
+      line-height: 1.8;
     }
     a {
       color: #1d3557;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
