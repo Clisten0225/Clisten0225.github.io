@@ -38,7 +38,7 @@
     }
     .sidebar img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 50%;
     }
     .sidebar h2 {
       margin-top: 20px;
@@ -69,11 +69,12 @@
     <a href="#bio">Biography</a>
     <a href="#research">Research</a>
     <a href="#contact">Contact</a>
+    <a href="#medium">Medium</a>
   </nav>
 
   <div class="container">
     <div class="sidebar">
-      <img src="https://github.com/Clisten0225/Clisten0225.github.io/me.JPG?raw=true" alt="Li-Sheng Zhuang" width="250" style="border-radius: 50%;">
+      <img src="https://github.com/Clisten0225/Clisten0225.github.io/me.JPG?raw=true" alt="Li-Sheng Zhuang" width="250">
       <h2>Li-Sheng Zhuang</h2>
       <p>Graduate Student<br>NTHU Institute of Statistics</p>
       <p><a href="mailto:your@email.com">Email</a><br>
@@ -106,7 +107,27 @@
           <li>Location: Hsinchu, Taiwan</li>
         </ul>
       </section>
+
+      <section id="medium">
+        <h3>Latest from Medium</h3>
+        <ul id="medium-posts">Loading...</ul>
+      </section>
     </div>
   </div>
+
+  <script>
+    const feedUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@yspstcc100060507';
+    fetch(feedUrl)
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('medium-posts');
+        container.innerHTML = '';
+        data.items.slice(0, 5).forEach(item => {
+          const li = document.createElement('li');
+          li.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
+          container.appendChild(li);
+        });
+      });
+  </script>
 </body>
 </html>
