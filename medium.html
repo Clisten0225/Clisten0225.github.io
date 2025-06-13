@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medium Blog - Li-Sheng Zhuang</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+    header {
+      background-color: #2f3e46;
+      padding: 20px 40px;
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .content {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #2f3e46;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 12px;
+    }
+    a {
+      color: #1d3557;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>Medium Blog Posts</header>
+  <div class="content">
+    <h2>Recent Articles</h2>
+    <ul id="medium-posts">Loading Medium posts...</ul>
+  </div>
+
+  <script>
+    const feedUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@yspstcc100060507';
+
+    fetch(feedUrl)
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('medium-posts');
+        container.innerHTML = '';
+        data.items.slice(0, 10).forEach(item => {
+          const li = document.createElement('li');
+          li.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
+          container.appendChild(li);
+        });
+      })
+      .catch(error => {
+        document.getElementById('medium-posts').innerHTML = 'Failed to load posts.';
+        console.error('Error fetching Medium feed:', error);
+      });
+  </script>
+</body>
+</html>
