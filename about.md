@@ -7,7 +7,7 @@ I am advised by [**Dr. Yen-Chung Huang**](https://www.stat.sinica.edu.tw/cht/ind
 
 
 <div style="text-align: center;">
-  <img src="Lab.JPG" alt="Our Lab Members" width="500" />
+  <img src="Lab.JPG" alt="Our Lab Members" style="max-width: 100%; height: auto;" />
   <p><em>Our Lab Members (2024)</em></p>
 </div>
 
