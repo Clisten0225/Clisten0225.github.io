@@ -21,46 +21,62 @@
       min-height: 100vh;
       line-height: 1.7; /* 調整行距，數值可調整為 1.5~1.8 */
     }
+  
     p {
       margin-bottom: 16px; /* 增加段落之間的間距 */
     }
+  
     header {
       background-color: #2f3e46;
       padding: 20px 40px;
       color: white;
       font-size: 1.5em;
       font-weight: bold;
+      position: sticky;   /* Sticky Header */
+      top: 0;
+      z-index: 1000;
     }
+  
     header a {
       color: white;
       text-decoration: none;
     }
+  
     nav {
       background-color: #354f52;
       padding: 10px 40px;
+      position: sticky;   /* Sticky Navigation */
+      top: 60px;          /* Adjust if header height changes */
+      z-index: 999;
     }
+  
     nav a {
       color: white;
       margin-right: 20px;
       text-decoration: none;
       font-weight: 500;
     }
+  
     .container {
       display: flex;
       padding: 40px;
       flex: 1;
     }
+  
     .sidebar {
       width: 25%;
       padding-right: 30px;
     }
+  
     .sidebar img {
       width: 100%;
       border-radius: 10px;
     }
+  
     .sidebar h2 {
       margin-top: 20px;
     }
+  
     .main {
       width: 75%;
       background: white;
@@ -68,17 +84,21 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
+  
     h3 {
       color: #2f3e46;
       border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
     }
+  
     ul {
       line-height: 1.8;
     }
+  
     a {
       color: #1d3557;
     }
+  
     footer {
       background-color: #f1f2f3;
       color: #666;
@@ -87,11 +107,13 @@
       padding: 20px 10px;
       border-top: 1px solid #ccc;
     }
+  
     footer a {
       color: #444;
       text-decoration: none;
       font-weight: bold;
     }
+  
     footer i {
       margin-left: 5px;
     }
