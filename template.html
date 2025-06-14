@@ -76,7 +76,7 @@
   </style>
 </head>
 <body>
-  <header><a href="index.html" style="color: white; text-decoration: none;">Li-Sheng Zhuang’s Website</a></header>
+  <header>Medium Blog Posts</header>
   <nav>
     <a href="index.html">Home</a>
     <a href="medium.html">Medium Blog</a>
@@ -84,32 +84,15 @@
 
   <div class="content">
     <h2>Recent Articles</h2>
-    <ul id="medium-posts">Loading Medium posts...</ul>
-    <p><a href="https://medium.com/@yspstcc100060507" target="_blank"><strong>See all my articles on Medium</strong></a></p>
+    <p><strong>See all my articles on Medium</strong></p>
   </div>
 
   <footer>
-    &copy; 2025 Li-Sheng Zhuang. All rights reserved.
+    FOLLOW:
+    <a href="https://github.com/Clisten0225" target="_blank">GITHUB <i class="fab fa-github"></i></a><br><br>
+    © 2025 Li-Sheng Zhuang. All rights reserved.<br>
+    Site last updated 2025-06-14
   </footer>
 
-  <script>
-    const feedUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@yspstcc100060507';
-
-    fetch(feedUrl)
-      .then(res => res.json())
-      .then(data => {
-        const container = document.getElementById('medium-posts');
-        container.innerHTML = '';
-        data.items.slice(0, 10).forEach(item => {
-          const li = document.createElement('li');
-          li.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
-          container.appendChild(li);
-        });
-      })
-      .catch(error => {
-        document.getElementById('medium-posts').innerHTML = 'Failed to load posts.';
-        console.error('Error fetching Medium feed:', error);
-      });
-  </script>
 </body>
 </html>
