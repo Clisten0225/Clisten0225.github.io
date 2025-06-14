@@ -12,4 +12,4 @@ I am advised by [**Dr. Yen-Chung Huang**](https://www.stat.sinica.edu.tw/cht/ind
 </div>
 
 
-Thank you for visiting my website. Feel free to check out my [GitHub](https://github.com/Clisten0225) or [LinkedIn](https://www.linkedin.com/in/%E7%AB%8B%E5%8B%9D-%E8%8E%8A-767b66179/) for more details about my work.
+Thank you for visiting my website. Feel free to check out my [**GitHub**](https://github.com/Clisten0225) or [**LinkedIn**](https://www.linkedin.com/in/%E7%AB%8B%E5%8B%9D-%E8%8E%8A-767b66179/) for more details about my work.
