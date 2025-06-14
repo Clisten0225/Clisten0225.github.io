@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clisten0225.github.io/sitemap.xml
