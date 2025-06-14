@@ -12,14 +12,14 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       background-color: #f7f9fc;
       color: #333;
-      line-height: 1.7; /* 調整行距，數值可調整為 1.5~1.8 */
+      line-height: 1.7;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
   
     p {
-      margin-bottom: 16px; /* 增加段落之間的間距 */
+      margin-bottom: 16px;
     }
   
     header {
@@ -28,7 +28,7 @@
       color: white;
       font-size: 1.5em;
       font-weight: bold;
-      position: sticky;   /* Sticky Header */
+      position: sticky;
       top: 0;
       z-index: 1000;
     }
@@ -36,8 +36,8 @@
     nav {
       background-color: #354f52;
       padding: 10px 40px;
-      position: sticky;   /* Sticky Navigation */
-      top: 60px;          /* 根據 header 高度微調 */
+      position: sticky;
+      top: 72px; /* 根據 header 的高度調整這裡，header 約高 72px */
       z-index: 999;
     }
   
@@ -55,6 +55,7 @@
       background: white;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-top: 30px; /* 增加與 sticky 區塊的間距 */
     }
   
     h2 {
