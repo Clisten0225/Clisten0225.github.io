@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <title>Li-Sheng Zhuang</title>
   <style>
     body {
@@ -55,7 +56,6 @@
     a:hover {
       text-decoration: underline;
     }
-
     footer {
       background-color: #f1f2f3;
       color: #666;
@@ -74,18 +74,17 @@
       margin-left: 5px;
     }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-  <header>Template</header>
+  <header>Li-Sheng Zhuang’s Website</header>
   <nav>
     <a href="index.html">Home</a>
     <a href="medium.html">Medium Blog</a>
   </nav>
 
   <div class="content">
-  <div id="markdown-content">Loading content...</div>
-</div>
+    <div id="markdown-content">Loading content...</div>
+  </div>
 
   <footer>
     FOLLOW:
@@ -94,5 +93,16 @@
     Site last updated 2025-06-14
   </footer>
 
+  <script>
+    fetch('article.md')
+      .then(response => response.text())
+      .then(markdown => {
+        document.getElementById('markdown-content').innerHTML = marked.parse(markdown);
+      })
+      .catch(error => {
+        document.getElementById('markdown-content').innerHTML = 'Error loading markdown file.';
+        console.error(error);
+      });
+  </script>
 </body>
 </html>
