@@ -1,21 +1,9 @@
 # About Me
 
-Hello! I’m **Li-Sheng Zhuang (莊立勝)**, a second-year master’s student at the **Institute of Statistics and Data Science**, **National Tsing Hua University (NTHU)**, Taiwan. I hold a bachelor’s degree in **Applied Mathematics** with a double major in **Finance** from **National Chung Hsing University (NCHU)**.
+Hello! I’m **Li-Sheng Zhuang (莊立勝)**, a second-year master’s student at the [**Institute of Statistics and Data Science**](https://stat.site.nthu.edu.tw/?Lang=zh-tw), **National Tsing Hua University**, Taiwan. I hold a bachelor’s degree in [**Applied Mathematics**](https://www.amath.nchu.edu.tw/) with a double major in **Finance** from **National Chung Hsing University**.
 
-My expertise lies in **biostatistics**, with a particular focus on **survival analysis**, **causal inference**, and the **illness-death model**. I am also interested in applications of **machine learning** in finance and healthcare. My current master’s thesis investigates **causal mediation analysis** within the illness-death framework, integrating non-Markov structures and nonparametric estimation methods.
-
----
-
-## Project Experience
-
-1. **Causal Mediation Analysis in Illness-Death Models**  
-   Developed and applied causal mediation methodology to illness-death models in survival analysis. This work forms the basis of my master’s thesis and involves non-Markov structures, and comparison with existing methods.
-
-2. **Futures and Options Pair Trading Bot**  
-   Built a pair trading algorithm for futures and options using statistical arbitrage strategies. This project was presented in a student competition hosted by the Taiwan Futures Exchange.
-
-3. **Credit Card Customer Loyalty Prediction**  
-   Implemented machine learning models (e.g., logistic regression, random forest) to predict customer loyalty using transaction and demographic data. This was the final project for a graduate-level course in statistical learning.
+My expertise lies in **biostatistics**, with a particular focus on **survival analysis**, **causal inference**, and the **illness-death model**. My current master’s thesis investigates **causal mediation analysis** within the illness-death framework, integrating non-Markov structures and nonparametric estimation methods.  
+I am advised by [**Dr. Yen-Chung Huang**]([https://scholar.google.com.tw/citations?user=UZYOMaYAAAAJ](https://www.stat.sinica.edu.tw/cht/index.php?act=researcher_manager&code=view&member=13)) and [**Dr. Wen-Han Hwang**]([https://scholar.google.com.tw/citations?user=UZYOMaYAAAAJ](https://stat.site.nthu.edu.tw/p/406-1327-170579,r406.php?Lang=zh-tw)).
 
 ---
 
