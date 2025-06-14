@@ -1,4 +1,4 @@
-]# About Me
+# About Me
 
 Hello! I’m **Li-Sheng Zhuang (莊立勝)**, a second-year master’s student at the [**Institute of Statistics and Data Science**](https://stat.site.nthu.edu.tw/?Lang=zh-tw), **National Tsing Hua University**, Taiwan. I hold a bachelor’s degree in [**Applied Mathematics**](https://www.amath.nchu.edu.tw/) with a double major in **Finance** from **National Chung Hsing University**.
 
@@ -7,9 +7,10 @@ I am advised by [**Dr. Yen-Chung Huang**](https://www.stat.sinica.edu.tw/cht/ind
 
 ---
 
-![Our Lab Members](Lab.JPG)
-
-**Photo: Our Lab Members (2024)**
+<div style="text-align: center;">
+  <img src="Lab.JPG" alt="Our Lab Members" width="500" />
+  <p><em>Our Lab Members (2024)</em></p>
+</div>
 
 ---
 
