@@ -1,18 +1,28 @@
 # About Me
 
-Hello! I'm **Li-Sheng Zhuang (莊立勝)**, currently a graduate student in the Institute of Statistics and Data Science at National Tsing Hua University (NTHU), Taiwan.
+Hello! I’m **Li-Sheng Zhuang (莊立勝)**, a second-year master’s student at the **Institute of Statistics and Data Science**, **National Tsing Hua University (NTHU)**, Taiwan. I hold a bachelor’s degree in **Applied Mathematics** with a double major in **Finance** from **National Chung Hsing University (NCHU)**.
 
-My academic interests lie primarily in **causal inference**, **survival analysis**, and **semi-competing risks models**, particularly focusing on **causal mediation analysis** in illness-death processes. I am currently completing my master’s thesis on this topic and have also engaged in research involving non-Markovian structures and bootstrap methods.
+My expertise lies in **biostatistics**, with a particular focus on **survival analysis**, **causal inference**, and the **illness-death model**. I am also interested in applications of **machine learning** in finance and healthcare. My current master’s thesis investigates **causal mediation analysis** within the illness-death framework, integrating non-Markov structures and nonparametric estimation methods.
 
-Prior to my graduate studies, I earned my B.S. in **Applied Mathematics** with a double major in **Finance** from National Chung Hsing University (NCHU). My undergraduate work involved applying machine learning to predict customer loyalty and designing algorithmic trading bots for futures and options.
+---
 
-I have received multiple honors for both academic performance and teaching, including:
-- **Outstanding Teaching Assistant Award** in Calculus at NCHU (Fall 2021 & Spring 2022),
-- **Award of Excellence** at the 7th Graduate Student Symposium on Statistical Research (NTHU),
-- **Membership in the Phi Tau Phi Scholastic Honor Society**.
+## Project Experience
 
-I am passionate about applying rigorous statistical thinking to real-world problems, and my long-term goal is to contribute to both research and teaching in the field of statistics.
+1. **Causal Mediation Analysis in Illness-Death Models**  
+   Developed and applied causal mediation methodology to illness-death models in survival analysis. This work forms the basis of my master’s thesis and involves non-Markov structures, and comparison with existing methods.
 
-If you're interested in my work or wish to connect, feel free to check out my [GitHub](https://github.com/Clisten0225) or [LinkedIn](https://www.linkedin.com/in/立勝-莊-767b66179/).
+2. **Futures and Options Pair Trading Bot**  
+   Built a pair trading algorithm for futures and options using statistical arbitrage strategies. This project was presented in a student competition hosted by the Taiwan Futures Exchange.
 
-Thanks for visiting!
+3. **Credit Card Customer Loyalty Prediction**  
+   Implemented machine learning models (e.g., logistic regression, random forest) to predict customer loyalty using transaction and demographic data. This was the final project for a graduate-level course in statistical learning.
+
+---
+
+## Programming Languages
+
+I am proficient in **R**, **Python**, and **Matlab**, and have hands-on experience using these tools for data analysis, model development, and statistical computing.
+
+---
+
+Thank you for visiting my website. Feel free to check out my [GitHub](https://github.com/Clisten0225) or [LinkedIn](https://www.linkedin.com/in/%E7%AB%8B%E5%8B%9D-%E8%8E%8A-767b66179/) for more details about my work.
