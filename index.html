@@ -68,28 +68,37 @@
       flex: 1;
       word-break: break-word;
       overflow-wrap: break-word;
+      gap: 30px; /* 新增：用 gap 取代 sidebar 的 padding-right 更直觀 */
     }
 
+    /* ✅ Sidebar 變窄：固定寬度，不再用 25% */
     .sidebar {
-      width: 25%;
-      padding-right: 30px;
+      width: 220px;     /* 你可以改成 200~260px */
+      flex-shrink: 0;   /* 避免被擠壓 */
     }
 
+    /* ✅ 頭像固定大小 + 置中 + 圓形裁切 */
     .sidebar img {
-      width: 100%;
-      border-radius: 10px;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
     }
 
     .sidebar h2 {
       margin-top: 20px;
     }
 
+    /* ✅ 主欄自動吃剩餘寬度，不再固定 75% */
     .main {
-      width: 75%;
+      flex: 1;
       background: white;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      min-width: 0; /* 防止長字串把版面撐爆（搭配 overflow-wrap） */
     }
 
     h3 {
@@ -129,6 +138,21 @@
     footer i {
       margin-left: 5px;
     }
+
+    /* ✅ 可選：手機版讓 sidebar 跟 main 直排，避免太擠 */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+      .sidebar {
+        width: 100%;
+      }
+      .sidebar img {
+        width: 160px;
+        height: 160px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -143,7 +167,7 @@
 
   <div class="container">
     <div class="sidebar">
-      <img src="https://clisten0225.github.io/me.JPG" alt="My Photo" width="250" style="border-radius: 50%;" />
+      <img src="https://clisten0225.github.io/me.JPG" alt="My Photo" />
       <h2>Li-Sheng Zhuang (莊立勝)</h2>
       <p>Graduate Student<br />Institute of Statistics and Data Science, NTHU</p>
       <p style="font-size: 1.5em;">
