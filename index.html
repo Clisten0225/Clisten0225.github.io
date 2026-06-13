@@ -10,6 +10,7 @@
   <meta name="keywords" content="Li-Sheng Zhuang, 莊立勝, statistics, survival analysis, illness-death model, causal inference, Taiwan, NTHU, data science">
   <meta name="author" content="Li-Sheng Zhuang">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="site.css" />
   <title>Li-Sheng Zhuang</title>
   <style>
     body {
@@ -91,6 +92,24 @@
       margin-top: 20px;
     }
 
+    .cv-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      background-color: #2f3e46;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    .cv-link:hover {
+      text-decoration: none;
+      filter: brightness(0.96);
+    }
+
     /* ✅ 主欄自動吃剩餘寬度，不再固定 75% */
     .main {
       flex: 1;
@@ -160,9 +179,7 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
-    <a href="project.html">Projects</a>
     <a href="notes.html">Notes</a>
-    <a href="medium.html">Medium Blog</a>
   </nav>
 
   <div class="container">
@@ -174,6 +191,9 @@
         <a href="mailto:yspstcc100060507@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>&nbsp;&nbsp;
         <a href="https://github.com/Clisten0225" title="GitHub"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
         <a href="https://www.linkedin.com/in/%E7%AB%8B%E5%8B%9D-%E8%8E%8A-767b66179/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </p>
+      <p>
+        <a class="cv-link" href="Li_Sheng_Zhuang_CV.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> View CV</a>
       </p>
     </div>
 
@@ -189,10 +209,21 @@
 
       <section id="research">
         <h3>Research Interests</h3>
-        <ul>
-          <li>Nonparametric regression method</li>
+        <ul class="tag-row">
           <li>Causal mediation analysis</li>
+          <li>Nonparametric methods</li>
+          <li>Machine learning theory</li>
           <li>Survival analysis</li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h3>Publications</h3>
+        <ul class="highlight-list">
+          <li>
+            <span class="item-title">L.-S. Zhuang, J.-C. Yu, and Y.-T. Huang, “Nonparametric mediation analysis of non-Markov illness-death model”</span>
+            <span class="item-meta">Manuscript under major revision at <em>Statistics in Medicine</em>, 2025.</span>
+          </li>
         </ul>
       </section>
 
@@ -201,6 +232,7 @@
         <ul>
           <li>Poster Competition Winner, 2026 ISI–ISM–ISSAS Joint Conference, Academia Sinica
             [<a href="https://www3.stat.sinica.edu.tw/3ijc2026/" target="_blank">Link</a>]
+          </li>
           <li>Chen Wen-Cheng Statistical Science Scholarship, NTHU, 2025 
             [<a href="https://www.facebook.com/photo?fbid=1050222633913367&set=pb.100067769211972.-2207520000" target="_blank">Link</a>]
           </li>
@@ -231,6 +263,10 @@
       </section>
     </div>
   </div>
-  
+  <footer class="site-footer">
+    <p>Last updated: <span data-last-updated></span></p>
+    <p>© Li-Sheng Zhuang</p>
+  </footer>
+  <script src="site.js"></script>
 </body>
 </html>

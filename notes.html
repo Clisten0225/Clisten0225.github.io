@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="site.css">
   <title>Li-Sheng Zhuang</title>
   <style>
     body {
@@ -113,30 +114,57 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
-    <a href="project.html">Projects</a>
     <a href="notes.html">Notes</a>
-    <a href="medium.html">Medium Blog</a>
   </nav>
 
   <div class="content">
-  <h2>Notes</h2>
-  <ul>
-    <li>
-      <strong>Martingale Properties of the Nelson–Aalen Estimator</strong> (2025)
-      <a href="https://drive.google.com/file/d/1D80pj9GftFeWW-wsPTzq009YyMxkss-o/view?usp=sharing" target="_blank">[Link]</a>
-    </li>
-    <li>
-      <strong>Non-negative Matrix Factorization</strong> (2024)
-      <a href="https://drive.google.com/drive/folders/1qa01AiGzbZhKJwK22I8LoQJNERYIwD9P?usp=drive_link" target="_blank">[Link]</a>
-    </li>
-    <li>
-      <strong>Principal Component Analysis</strong> (2023)
-      <a href="https://drive.google.com/file/d/1-4Vb00hy1Q7gLbiaib2YRvcFnCuxvkAg/view?usp=sharing" target="_blank">[Link]</a>
-    </li>
-    <li>
-      <strong>LaTeX Handout</strong> (2023)
-      <a href="https://drive.google.com/file/d/1icBEOS4nvyQsjDQqZQfHliwG7uDwbI6b/view?usp=sharing" target="_blank">[Link]</a>
-    </li>
-    </div>
+    <h2>Notes</h2>
+    <ul>
+      <li>
+        <strong>Martingale Properties of the Nelson-Aalen Estimator</strong> (2025)
+        <a href="https://drive.google.com/file/d/1D80pj9GftFeWW-wsPTzq009YyMxkss-o/view?usp=sharing" target="_blank" rel="noopener">[Link]</a>
+      </li>
+      <li>
+        <strong>Non-negative Matrix Factorization</strong> (2024)
+        <a href="https://drive.google.com/drive/folders/1qa01AiGzbZhKJwK22I8LoQJNERYIwD9P?usp=drive_link" target="_blank" rel="noopener">[Link]</a>
+      </li>
+      <li>
+        <strong>Principal Component Analysis</strong> (2023)
+        <a href="https://drive.google.com/file/d/1-4Vb00hy1Q7gLbiaib2YRvcFnCuxvkAg/view?usp=sharing" target="_blank" rel="noopener">[Link]</a>
+      </li>
+      <li>
+        <strong>LaTeX Handout</strong> (2023)
+        <a href="https://drive.google.com/file/d/1icBEOS4nvyQsjDQqZQfHliwG7uDwbI6b/view?usp=sharing" target="_blank" rel="noopener">[Link]</a>
+      </li>
+    </ul>
+
+    <h2>Medium Articles</h2>
+    <ul id="medium-posts">Loading Medium posts...</ul>
+    <p><a href="https://medium.com/@yspstcc100060507" target="_blank" rel="noopener"><strong>See all my articles on Medium</strong></a></p>
+  </div>
+  <script>
+    const feedUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@yspstcc100060507';
+
+    fetch(feedUrl)
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('medium-posts');
+        container.innerHTML = '';
+        data.items.slice(0, 17).forEach(item => {
+          const li = document.createElement('li');
+          li.innerHTML = `<a href="${item.link}" target="_blank" rel="noopener">${item.title}</a>`;
+          container.appendChild(li);
+        });
+      })
+      .catch(error => {
+        document.getElementById('medium-posts').innerHTML = 'Failed to load posts.';
+        console.error('Error fetching Medium feed:', error);
+      });
+  </script>
+  <footer class="site-footer">
+    <p>Last updated: <span data-last-updated></span></p>
+    <p>© Li-Sheng Zhuang</p>
+  </footer>
+  <script src="site.js"></script>
 </body>
 </html>
