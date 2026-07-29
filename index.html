@@ -110,6 +110,30 @@
       filter: brightness(0.96);
     }
 
+    .publication-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .publication-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 6px;
+      background-color: #2f3e46;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9em;
+    }
+
+    .publication-link:hover {
+      text-decoration: none;
+      filter: brightness(0.96);
+    }
+
     /* ✅ 主欄自動吃剩餘寬度，不再固定 75% */
     .main {
       flex: 1;
@@ -224,9 +248,14 @@
             <span class="item-title">L.-S. Zhuang, J.-C. Yu, and Y.-T. Huang, “Non-Parametric Mediation Analysis of Non-Markov Illness-Death Model”</span>
             <span class="item-meta">
               Accepted for publication in <em>Statistics in Medicine</em>, 2026.
-              <a href="https://doi.org/10.1002/sim.70685" target="_blank" rel="noopener">DOI: 10.1002/sim.70685</a>
-              ·
-              <a href="https://github.com/Clisten0225/nmSurvMed" target="_blank" rel="noopener"><code>nmSurvMed</code> R package</a>
+            </span>
+            <span class="publication-links">
+              <a class="publication-link" href="https://doi.org/10.1002/sim.70685" target="_blank" rel="noopener">
+                <i class="fas fa-book-open" aria-hidden="true"></i>&nbsp; DOI
+              </a>
+              <a class="publication-link" href="https://github.com/Clisten0225/nmSurvMed" target="_blank" rel="noopener">
+                <i class="fab fa-github" aria-hidden="true"></i>&nbsp; <code>nmSurvMed</code> R package
+              </a>
             </span>
           </li>
         </ul>
